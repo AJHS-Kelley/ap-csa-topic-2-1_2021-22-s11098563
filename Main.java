@@ -1,4 +1,4 @@
-// Connor Cook, AP CSA Topic 2-1, 11-01-2021, 8:59am, v0.3
+// Connor Cook, AP CSA Topic 2-1, 11-01-2021, 9:05am, v0.4
 
 
 public class Main {
@@ -15,8 +15,14 @@ public class Main {
         this.gradeLevel = 0;
         this.GPA = 0.0;
         this.studentName = "";
+    }
 
-
+    // Value constructor. Assigns values to the instance variables in the other constructor.
+    public Student(int studentID, int gradeLevel, double GPA, String studentName) {
+        this.studentID = studentID;
+        this.gradeLevel = gradeLevel;
+        this.GPA = GPA;
+        this.studentName = studentName;
     }
 }
 
