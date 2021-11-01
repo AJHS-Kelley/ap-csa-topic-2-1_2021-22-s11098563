@@ -1,13 +1,10 @@
-// Connor Cook, AP CSA Topic 2-1, 11-01-2021, 9:05am, v0.4
+// Connor Cook, AP CSA Topic 2-1, 11-01-2021, 9:08am, v0.5
 
-
-public class Main {
-
-    public class Student {
-        private int studentID;
-        private int gradeLevel;
-        private double GPA;
-        private String studentName;
+public class Student {
+    private int studentID;
+    private int gradeLevel;
+    private double GPA;
+    private String studentName;
 
     // Creating a constructor. Generally creates a default copy of the object.
     public Student() {
@@ -23,7 +20,6 @@ public class Main {
         this.gradeLevel = gradeLevel;
         this.GPA = GPA;
         this.studentName = studentName;
-    }
 }
 
     public static void main(String[] args){
