@@ -1,6 +1,7 @@
-// Connor Cook, AP CSA Topic 2-1, 11-01-2021, 9:14am, v0.6
+// Connor Cook, AP CSA Topic 2-1, 11-01-2021, 9:22am, v0.7
 
 public class Student {
+    // These are instance variables.
     private int studentID;
     private int gradeLevel;
     private double GPA;
@@ -22,9 +23,19 @@ public class Student {
         this.studentName = studentName;
 }
 
+    // Sets specific values for some instance variables but allows input for others.
+    public Student(int studentID, String studentName) {
+        this.studentID = studentID;
+        this.studentName = studentName;
+        this.gradeLevel = 9;
+        this.GPA = 4.0;
+    }
+
+    // Multiple constuctors is known as overloading.
+
     public static void main(String[] args){
-        Student student0 = new Student();
-        Student student1 = new Student(12345678, 12, 3.5, "Darren");
+        Student student0 = new Student(); // Built with default constructor.
+        Student student1 = new Student(12345678, 12, 3.5, "Darren"); // Built with value constructor.
         
     }
 
