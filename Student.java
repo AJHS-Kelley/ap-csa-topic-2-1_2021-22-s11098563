@@ -1,4 +1,4 @@
-// Connor Cook, AP CSA Topic 2-1, 11-01-2021, 9:08am, v0.5
+// Connor Cook, AP CSA Topic 2-1, 11-01-2021, 9:14am, v0.6
 
 public class Student {
     private int studentID;
@@ -23,6 +23,8 @@ public class Student {
 }
 
     public static void main(String[] args){
+        Student student0 = new Student();
+        Student student1 = new Student(12345678, 12, 3.5, "Darren");
         
     }
 
