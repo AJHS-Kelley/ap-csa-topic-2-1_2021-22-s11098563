@@ -1,4 +1,4 @@
-// Connor Cook, AP CSA Topic 2-1, 11-01-2021, 9:22am, v0.7
+// Connor Cook, AP CSA Topic 2-1, 11-05-2021, 8:47am, v0.8
 
 public class Student {
     // These are instance variables.
@@ -39,6 +39,25 @@ public class Student {
         
     }
 
+    // Parameters and Arguments
 
+    public static void assignLunch(int gradeLevel) {
+        String lunchPeriod;
+
+        if (gradeLevel == 9) {
+            lunchPeriod = "First Lunch";
+            System.out.println("This student has " + lunchPeriod);
+        } else if (gradeLevel == 10) {
+            lunchPeriod = "Second Lunch";
+            System.out.println("This student has " + lunchPeriod);
+        } else if (gradeLevel == 11) {
+            lunchPeriod = "Third Lunch";
+            System.out.println("This student has " + lunchPeriod);
+        } else {
+            lunchPeriod = "Off-Campus Lunch";
+            System.out.println("This student has " + lunchPeriod);
+        }
+
+    }
 
 }
