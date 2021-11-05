@@ -1,4 +1,6 @@
-// Connor Cook, AP CSA Topic 2-1, 11-05-2021, 8:47am, v0.8
+import java.util.Scanner;
+
+// Connor Cook, AP CSA Unit 2, 11-05-2021, 9:06am, v0.9
 
 public class Student {
     // These are instance variables.
@@ -33,14 +35,41 @@ public class Student {
 
     // Multiple constuctors is known as overloading.
 
-    public static void main(String[] args){
-        Student student0 = new Student(); // Built with default constructor.
-        Student student1 = new Student(12345678, 12, 3.5, "Darren"); // Built with value constructor.
-        
+    // Creating methods
+    public static void calcGPA() {
+        int grade0;
+        int grade1;
+        int grade2;
+        int grade3;
+        double newGPA;
+
+
+        Scanner myScanner = new Scanner(System.in);
+
+        System.out.println("What is the first grade?");
+        grade0 = myScanner.nextInt();
+        System.out.println("What is the second grade?");
+        grade1 = myScanner.nextInt();
+        System.out.println("What is the third grade?");
+        grade2 = myScanner.nextInt();
+        System.out.println("What is the fourth grade?");
+        grade3 = myScanner.nextInt();
+
+        newGPA = (grade0 + grade1 + grade2 + grade3) / 4;
+        System.out.println("The new GPA is " + newGPA);
+    }
+
+    public static void newLine() {
+        System.out.println();
+    }
+
+    public static void threeLine() {
+        newLine();
+        newLine();
+        newLine();
     }
 
     // Parameters and Arguments
-
     public static void assignLunch(int gradeLevel) {
         String lunchPeriod;
 
@@ -57,7 +86,20 @@ public class Student {
             lunchPeriod = "Off-Campus Lunch";
             System.out.println("This student has " + lunchPeriod);
         }
+    }
 
+    public static void main(String[] args) {
+        
+        Student student0 = new Student(); // Built with default constructor.
+        Student student1 = new Student(12345678, 12, 3.5, "Darren"); // Built with value constructor.
+
+        System.out.println("Hello there!");
+        threeLine();
+        System.out.println("General Kenobi");
+        calcGPA();
+
+
+        assignLunch(9);
     }
 
 }
