@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 import javax.lang.model.util.ElementScanner6;
 
-// Connor Cook, AP CSA Unit 2, 11-15-2021, 9:00am, v1.0
+// Connor Cook, AP CSA Unit 2, 11-15-2021, 9:06am, v1.1
 
 public class Student {
     // These are instance variables.
@@ -91,7 +91,7 @@ public class Student {
     }
 
     // Multiple parameters
-    public static void assignLunch(int gradeLevel, double GPA) {
+    public static void assignLunchMultiple(int gradeLevel, double GPA) {
         String lunchPeriod;
         // Boolean operators
         // && is and
@@ -124,6 +124,7 @@ public class Student {
         calcGPA();
 
         assignLunch(9);
+        assignLunchMultiple(11, 3.0);
     }
 
 }
