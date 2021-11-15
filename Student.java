@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
-// Connor Cook, AP CSA Unit 2, 11-05-2021, 9:06am, v0.9
+import javax.lang.model.util.ElementScanner6;
+
+// Connor Cook, AP CSA Unit 2, 11-15-2021, 9:00am, v1.0
 
 public class Student {
     // These are instance variables.
@@ -88,6 +90,29 @@ public class Student {
         }
     }
 
+    // Multiple parameters
+    public static void assignLunch(int gradeLevel, double GPA) {
+        String lunchPeriod;
+        // Boolean operators
+        // && is and
+        // || is or
+        // ! is not
+
+        if (gradeLevel == 9 || GPA <= 1.5) {
+            lunchPeriod = "First Lunch";
+            System.out.println("This student has " + lunchPeriod);
+        } else if (gradeLevel == 10 && GPA > 2.0) {
+            lunchPeriod = "Second Lunch";
+            System.out.println("This student has " + lunchPeriod);
+        } else if (gradeLevel == 11 && (GPA != 0.0)) {
+            lunchPeriod = "Third Lunch";
+            System.out.println("This student has " + lunchPeriod);
+        } else {
+            lunchPeriod = "Off-Campus Lunch";
+            System.out.println("This student has " + lunchPeriod);
+        }
+    }
+
     public static void main(String[] args) {
         
         Student student0 = new Student(); // Built with default constructor.
@@ -97,7 +122,6 @@ public class Student {
         threeLine();
         System.out.println("General Kenobi");
         calcGPA();
-
 
         assignLunch(9);
     }
