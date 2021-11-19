@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Connor Cook, AP CSA Unit 2, 11-19-2021, 8:57am, v1.5
+// Connor Cook, AP CSA Unit 2, 11-19-2021, 9:01am, v1.6
 
 public class Student {
     // These are instance variables.
@@ -138,6 +138,13 @@ public class Student {
         double randomPercent;
         randomPercent = Math.random();
         System.out.println(randomPercent);
+
+        System.out.println("Next the square root of x will be calculated.");
+        System.out.println(Math.sqrt(x));
+        //Way to save the sqrt for later use in the code.
+        double sqrtX;
+        sqrtX = Math.sqrt(x);
+        System.out.println(sqrtX);
     }
 
     public static void main(String[] args) {
