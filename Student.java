@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Connor Cook, AP CSA Unit 2, 11-19-2021, 8:22am, v1.2
+// Connor Cook, AP CSA Unit 2, 11-19-2021, 8:34am, v1.3
 
 public class Student {
     // These are instance variables.
@@ -23,7 +23,7 @@ public class Student {
         this.gradeLevel = gradeLevel;
         this.GPA = GPA;
         this.studentName = studentName;
-}
+    }
 
     // Sets specific values for some instance variables but allows input for others.
     public Student(int studentID, String studentName) {
@@ -112,7 +112,16 @@ public class Student {
     }
 
     public static void mathPractice() {
-
+        int x;
+        int y;
+        Scanner myScanner = new Scanner(System.in);
+        x = myScanner.nextInt();
+        y = myScanner.nextInt();
+        System.out.println(Math.min(x, y));
+        
+        int lowest;
+        lowest = Math.min(x, y);
+        System.out.println(lowest);
     }
 
     public static void main(String[] args) {
