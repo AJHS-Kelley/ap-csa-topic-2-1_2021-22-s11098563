@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Connor Cook, AP CSA Unit 2, 11-19-2021, 8:41am, v1.4
+// Connor Cook, AP CSA Unit 2, 11-19-2021, 8:57am, v1.5
 
 public class Student {
     // These are instance variables.
@@ -115,15 +115,29 @@ public class Student {
         int x;
         int y;
         Scanner myScanner = new Scanner(System.in);
-        System.out.print("Enter an integer. ");
+        System.out.print("Enter an integer for x. ");
         x = myScanner.nextInt();
-        System.out.print("Enter another integer. ");
+        System.out.print("Enter another integer for y. ");
         y = myScanner.nextInt();
         System.out.println(Math.min(x, y));
-        
+        // Way to save the lowest value for use later in code.
         int lowest;
         lowest = Math.min(x, y);
         System.out.println(lowest);
+        
+        System.out.println("Next x will be calculated to the power of y.");
+        System.out.println(Math.pow(x, y));
+        // Way to save the calculated power of x to the y for later use in code.
+        double exponents;
+        exponents = Math.pow(x, y);
+        System.out.println(exponents);
+
+        System.out.println("Next 2 random numbers will be generated between 0 and 1.");
+        System.out.println(Math.random());
+        // Way to save the random number for use later in the code.
+        double randomPercent;
+        randomPercent = Math.random();
+        System.out.println(randomPercent);
     }
 
     public static void main(String[] args) {
