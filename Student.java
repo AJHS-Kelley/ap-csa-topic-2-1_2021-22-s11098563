@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Connor Cook, AP CSA Unit 2, 11-19-2021, 8:34am, v1.3
+// Connor Cook, AP CSA Unit 2, 11-19-2021, 8:41am, v1.4
 
 public class Student {
     // These are instance variables.
@@ -115,7 +115,9 @@ public class Student {
         int x;
         int y;
         Scanner myScanner = new Scanner(System.in);
+        System.out.print("Enter an integer. ");
         x = myScanner.nextInt();
+        System.out.print("Enter another integer. ");
         y = myScanner.nextInt();
         System.out.println(Math.min(x, y));
         
@@ -126,7 +128,7 @@ public class Student {
 
     public static void main(String[] args) {
         
-        Student student0 = new Student(); // Built with default constructor.
+        /*Student student0 = new Student(); // Built with default constructor.
         Student student1 = new Student(12345678, 12, 3.5, "Darren"); // Built with value constructor.
 
         System.out.println("Hello there!");
@@ -136,6 +138,9 @@ public class Student {
 
         assignLunch(9);
         assignLunchMultiple(11, 3.0);
+        */
+
+        mathPractice();
     }
 
 }
