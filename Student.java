@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
-import javax.lang.model.util.ElementScanner6;
-
-// Connor Cook, AP CSA Unit 2, 11-15-2021, 9:06am, v1.1
+// Connor Cook, AP CSA Unit 2, 11-19-2021, 8:22am, v1.2
 
 public class Student {
     // These are instance variables.
@@ -111,6 +109,10 @@ public class Student {
             lunchPeriod = "Off-Campus Lunch";
             System.out.println("This student has " + lunchPeriod);
         }
+    }
+
+    public static void mathPractice() {
+
     }
 
     public static void main(String[] args) {
