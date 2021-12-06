@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Connor Cook, AP CSA Unit 2, 11-19-2021, 9:01am, v1.6
+// Connor Cook, AP CSA Unit 2, 12-06-2021, 8:34am, v1.7
 
 public class Student {
     // These are instance variables.
@@ -111,6 +111,7 @@ public class Student {
         }
     }
 
+    // Math
     public static void mathPractice() {
         int x;
         int y;
@@ -145,6 +146,17 @@ public class Student {
         double sqrtX;
         sqrtX = Math.sqrt(x);
         System.out.println(sqrtX);
+    }
+
+    // Return methods
+    public static double getGPA() {
+        int grade0, grade1, grade2;
+        grade0 = 75;
+        grade1 = 50;
+        grade2 = 0;
+
+        double fakeGPA;
+        fakeGPA = (grade0 + grade1 + grade2) / 3;
     }
 
     public static void main(String[] args) {
