@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Connor Cook, AP CSA Unit 2, 12-06-2021, 8:42am, v1.8
+// Connor Cook, AP CSA Unit 2, 12-06-2021, 8:58am, v1.9
 
 public class Student {
     // These are instance variables.
@@ -161,6 +161,16 @@ public class Student {
         return fakeGPA;
     }
 
+    public static String getStudentName() {
+        String studentName;
+        studentName = "Jeff";
+
+        String fakeStudent;
+        fakeStudent = studentName;
+
+        return fakeStudent;
+    }
+
     public static void main(String[] args) {
         
         /*Student student0 = new Student(); // Built with default constructor.
@@ -177,11 +187,18 @@ public class Student {
 
         // mathPractice();
 
-        double realGPA;
+        /*double realGPA;
         realGPA = -1.0;
         System.out.println(realGPA);
         realGPA = getGPA();
         System.out.println(realGPA);
+        */
+
+        String realStudent;
+        realStudent = "Bobby";
+        System.out.println(realStudent);
+        realStudent = getStudentName();
+        System.out.println(realStudent);
     }
 
 }
